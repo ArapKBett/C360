@@ -1,0 +1,9 @@
+flask==2.3.3
+jax==0.4.23
+jaxlib==0.4.23
+transformers==4.44.2
+numpy==1.26.4
+gunicorn==22.0.0
+python-nmap==0.7.1
+zxcvbn==4.4.28
+requests==2.32.3
