@@ -7,3 +7,4 @@ gunicorn==22.0.0
 python-nmap==0.7.1
 zxcvbn==4.4.28
 requests==2.32.3
+torch==2.4.1
