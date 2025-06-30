@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arap's CyberGuard360</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='img/favicon.ico') }}">
+</head>
+<body>
+    <header>
+        <img src="{{ url_for('static', filename='img/logo.svg') }}" alt="CyberGuard360 Logo">
+        <h1>CyberGuard360 by Arap</h1>
+    </header>
+    <nav>
+        <a href="{{ url_for('main.index') }}">Home</a>
+        <a href="{{ url_for('main.url') }}">URL Detector</a>
+        <a href="{{ url_for('main.network') }}">Network Scanner</a>
+        <a href="{{ url_for('main.file') }}">File Integrity</a>
+        <a href="{{ url_for('main.password') }}">Password Analyzer</a>
+        <a href="{{ url_for('main.vulnerability') }}">Vulnerability Scanner</a>
+    </nav>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    <footer>
+        <p>© 2025 ArapBett</p>
+        <a href="https://x.com/your_profile" target="_blank">X</a>
+        <a href="https://github.com/ArapKBett" target="_blank">GitHub</a>
+        <a href="https://reddit.com/user/your_profile" target="_blank">Reddit</a>
+        <a href="https://discord.gg/your_invite" target="_blank">Discord</a>
+        <a href="https://linkedin.com/in/your_profile" target="_blank">LinkedIn</a>
+    </footer>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
