@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: cyberguard360
+    env: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: FLASK_ENV
+        value: production
