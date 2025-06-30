@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+    <h2>Malicious URL Detector</h2>
+    <form id="url-form">
+        <label for="url-input">Enter URL:</label>
+        <input type="text" id="url-input" name="url" required>
+        <button type="submit">Check URL</button>
+    </form>
+    <div id="url-result"></div>
+{% endblock %}
