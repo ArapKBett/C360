@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+    <h2>File Integrity Checker</h2>
+    <form id="file-form">
+        <label for="file-input">Enter File Path:</label>
+        <input type="text" id="file-input" name="file_path" required>
+        <button type="submit">Check Integrity</button>
+    </form>
+    <div id="file-result"></div>
+{% endblock %}
