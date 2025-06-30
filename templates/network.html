@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+    <h2>Network Scanner</h2>
+    <form id="network-form">
+        <label for="target-input">Enter Target (e.g., 192.168.1.1):</label>
+        <input type="text" id="target-input" name="target" required>
+        <button type="submit">Scan Network</button>
+    </form>
+    <div id="network-result"></div>
+{% endblock %}
